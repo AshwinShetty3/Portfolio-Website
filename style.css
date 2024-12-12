@@ -79,6 +79,26 @@
 .sfont:hover {
     text-decoration: underline;
 }
+@media (max-width: 1024px) {
+    .sfont {
+        color: gold !important;
+    }
+}
+
+.project-image {
+    width: 250px;
+    transform: scale(1.1);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .project-image {
+        width: 100%; /* Full width of the container */
+        max-width: 250px;
+        transform: scale(1); /* Reset or adjust scaling for smaller screens */
+    }
+}
+
 
 *, *::before, *::after {
     margin: 0;
