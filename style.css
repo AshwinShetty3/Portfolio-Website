@@ -47,6 +47,8 @@
     --transition2: .5s ease-in-out;
 }
 
+
+
 .resume-font {
     color: var(--light-gray);
     font-weight: var(--fw300);
