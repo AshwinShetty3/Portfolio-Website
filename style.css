@@ -94,12 +94,11 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .project-image {
-        width: 100%; /* Full width of the container */
-        max-width: 250px;
-        transform: scale(1); /* Reset or adjust scaling for smaller screens */
-    }
+    width: 100%;
+    max-width: 100%;
+    transform: scale(1.1);
 }
-
+}
 
 *, *::before, *::after {
     margin: 0;
