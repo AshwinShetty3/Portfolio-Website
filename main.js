@@ -130,3 +130,76 @@ for(let i = 0; i < navigationLinks.length; i++) {
         }
     });
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all navbar links
+    const navLinks = document.querySelectorAll('.navbar-link');
+    
+    // Select all pages/articles
+    const pages = document.querySelectorAll('article[data-page]');
+
+    // Add click event to each navbar link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Get the page to show from data-nav-link attribute
+            const pageToShow = this.getAttribute('data-nav-link');
+
+            // Remove active class from all links
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
+
+            // Remove active class from all pages
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Add active class to clicked link
+            this.classList.add('active');
+
+            // Find and show the corresponding page
+            const targetPage = document.querySelector(`article[data-page="${pageToShow}"]`);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+        });
+    });
+
+    // Optional: Activate first page by default
+    const firstLink = navLinks[0];
+    const firstPage = pages[0];
+    if (firstLink && firstPage) {
+        firstLink.classList.add('active');
+        firstPage.classList.add('active');
+    }
+});
+
+// todo: send mail integration
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    const form = event.target;
+    const messageDiv = document.getElementById('form-message');
+    
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        messageDiv.textContent = 'Thank you for your message!';
+        messageDiv.className = 'form-message success';
+        form.reset();
+      } else {
+        messageDiv.textContent = 'Oops! There was a problem submitting your form';
+        messageDiv.className = 'form-message error';
+      }
+      setTimeout(() => {
+        messageDiv.textContent = ''; // Clear the message after 2 seconds
+      }, 4000);
+    }).catch(error => {
+      messageDiv.textContent = 'Oops! There was a problem submitting your form';
+      messageDiv.className = 'form-message error';
+      setTimeout(() => {
+        messageDiv.textContent = ''; // Clear the message after 3 seconds
+      }, 2500);
+    });
+  });
