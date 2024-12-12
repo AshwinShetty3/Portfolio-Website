@@ -82,6 +82,7 @@
 @media (max-width: 1024px) {
     .sfont {
         color: gold !important;
+        margin-left: 10px;
     }
 }
 
