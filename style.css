@@ -159,6 +159,23 @@
 }
 
 
+
+.project-image2 {
+    width: 150px;
+    height: 200px;
+    transform: scale(1.1);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .project-image2 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
 *,
 *::before,
 *::after {
