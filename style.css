@@ -57,6 +57,10 @@
     100% { transform: translate(0, 0); }
 }
 
+.text-center{
+    text-align: center;
+}
+
 .shake {
     display: inline-block; /* Ensure the animation works properly */
     animation: shake 0.5s; /* Duration of the shake */
@@ -157,8 +161,6 @@
         transform: scale(1.1);
     }
 }
-
-
 
 .project-image2 {
     width: 150px;
