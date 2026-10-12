@@ -1,27 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
-    --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
-    --bg-gradient-yellow1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%);
-    --bg-gradient-yellow2: linear-gradient(135deg, hsla(45, 100%, 71%, .251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
-    --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
-    --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    /* Futuristic Cloud & DevOps Blue Palette */
+    --bg-gradient-onyx: linear-gradient(135deg, rgba(14, 28, 62, 0.7) 0%, rgba(7, 14, 34, 0.85) 100%);
+    --bg-gradient-jet: linear-gradient(135deg, rgba(16, 32, 72, 0.75) 0%, rgba(6, 13, 30, 0.9) 100%);
+    --bg-gradient-yellow1: linear-gradient(135deg, #00d2ff 0%, #00f5d4 100%);
+    --bg-gradient-yellow2: linear-gradient(135deg, rgba(0, 210, 255, 0.3) 0%, rgba(0, 245, 212, 0.15) 100%), rgba(8, 16, 38, 0.85);
+    --border-gradient-onyx: linear-gradient(135deg, rgba(0, 210, 255, 0.35) 0%, rgba(0, 245, 212, 0.12) 50%, rgba(14, 165, 233, 0.25) 100%);
+    --text-gradient-yellow: linear-gradient(135deg, #00d2ff 0%, #38bdf8 50%, #00f5d4 100%);
 
-    --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
-    --eerie-black1: hsl(240, 2%, 13%);
-    --eerie-black2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
-    --white1: hsl(0, 0%, 100%);
-    --white2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(45, 100%, 72%);
-    --vegas-gold: hsl(45, 54%, 58%);
-    --light-gray: hsl(0, 0%, 84%);
-    --light-gray70: hsla(0, 0%, 84%, .7);
-    --bittersweet-shimmer: hsl(0, 43%, 51%);
+    --jet: rgba(0, 210, 255, 0.2);
+    --onyx: rgba(14, 28, 60, 0.7);
+    --eerie-black1: rgba(10, 22, 50, 0.85);
+    --eerie-black2: rgba(8, 16, 38, 0.8);
+    --smoky-black: #050814;
+    --white1: #ffffff;
+    --white2: #f1f5f9;
+    --orange-yellow-crayola: #00d2ff;
+    --vegas-gold: #00f5d4;
+    --light-gray: #94a3b8;
+    --light-gray70: rgba(148, 163, 184, 0.75);
+    --bittersweet-shimmer: #38bdf8;
+    --neon-cyan: #00d2ff;
+    --neon-emerald: #00f5d4;
+    --neon-blue: #3b82f6;
 
-    --ff-poppins: 'Poppins', sans-serif;
+    --ff-poppins: 'Outfit', 'Poppins', sans-serif;
+    --ff-mono: 'JetBrains Mono', monospace;
 
     --fs1: 24px;
     --fs2: 18px;
@@ -37,14 +42,14 @@
     --fw500: 500;
     --fw600: 600;
 
-    --shadow1: -4px 8px 24px hsla(0, 0%, 0%, .25);
-    --shadow2: 0px 16px 30px hsla(0, 0%, 0%, .25);
-    --shadow3: 0px 16px 40px hsla(0, 0%, 0%, .25);
-    --shadow4: 0px 25px 50px hsla(0, 0%, 0%, .15);
-    --shadow5: 0px 24px 80px hsla(0, 0%, 0%, .25);
+    --shadow1: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(0, 210, 255, 0.15);
+    --shadow2: 0 20px 40px -15px rgba(0, 0, 0, 0.6), 0 0 30px -5px rgba(0, 210, 255, 0.2);
+    --shadow3: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px 0px rgba(0, 245, 212, 0.25);
+    --shadow4: 0px 25px 50px rgba(0, 0, 0, 0.4);
+    --shadow5: 0px 24px 80px rgba(0, 0, 0, 0.5);
 
-    --transition1: .25s ease;
-    --transition2: .5s ease-in-out;
+    --transition1: .25s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition2: .45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* bounce  */
@@ -99,7 +104,7 @@
 
 /* Gradient color for text */
 .text-color {
-    background: linear-gradient(to right, #FFDD44, #FFDD44);
+    background: linear-gradient(135deg, #00d2ff 0%, #00f5d4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -122,22 +127,24 @@
 }
 
 .form-message.success {
-    color: green;
+    color: #00f5d4;
 }
 
 .form-message.error {
-    color: red;
+    color: #f43f5e;
 }
 
 
 .sfont {
-    font-size: 0.7em;
-    color: gold;
+    font-size: 0.75em;
+    color: #00d2ff;
     margin-left: 10px;
     text-decoration: none;
+    font-family: var(--ff-mono);
 }
 
 .sfont:hover {
+    color: #00f5d4;
     text-decoration: underline;
 }
 
@@ -232,11 +239,26 @@ html {
     font-family: var(--ff-poppins);
 }
 
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
 body {
     background: var(--smoky-black);
+    position: relative;
+    overflow-x: hidden;
+    color: var(--white2);
 }
 
 main {
+    position: relative;
+    z-index: 1;
     margin: 15px 12px;
     margin-bottom: 75px;
     min-width: 259px;
@@ -250,6 +272,15 @@ article {
     box-shadow: var(--shadow1);
     z-index: 1;
     padding: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: border-color var(--transition1), box-shadow var(--transition1);
+}
+
+.sidebar:hover,
+article:hover {
+    box-shadow: var(--shadow2);
+    border-color: rgba(0, 210, 255, 0.35);
 }
 
 .sidebar.active {
@@ -1904,3 +1935,210 @@ textarea.form-input::-webkit-realizer {
         max-width: 700px;
     }
 }
+
+/* -------------------------------------------
+   STATUS PILL (AVATAR BADGE)
+------------------------------------------- */
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(0, 245, 212, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #00f5d4;
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 15px rgba(0, 245, 212, 0.15);
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00f5d4;
+    box-shadow: 0 0 8px #00f5d4;
+    animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 8px #00f5d4;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.7;
+        box-shadow: 0 0 16px #00f5d4;
+    }
+}
+
+/* -------------------------------------------
+   FLOATING 3D TECH ECOSYSTEM SECTION
+------------------------------------------- */
+.floating-tech-section {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.tech-section-header {
+    margin-bottom: 22px;
+}
+
+.tech-badge-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 210, 255, 0.08);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    color: #00d2ff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.tech-title {
+    margin-bottom: 8px;
+}
+
+.tech-subtitle {
+    color: var(--light-gray);
+    font-size: var(--fs6);
+    font-weight: var(--fw300);
+    line-height: 1.5;
+}
+
+.tech-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    perspective: 1200px;
+    margin-top: 18px;
+}
+
+.tech-badge-card {
+    position: relative;
+    border-radius: 16px;
+    padding: 1px;
+    background: var(--border-gradient-onyx);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+    animation: floatBadge 4.5s ease-in-out infinite alternate;
+    animation-delay: var(--float-delay, 0s);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+@keyframes floatBadge {
+    0% {
+        transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: translateY(-8px) rotateX(2deg) rotateY(-2deg);
+    }
+    100% {
+        transform: translateY(-14px) rotateX(-2deg) rotateY(2deg);
+    }
+}
+
+.tech-badge-card:hover {
+    animation-play-state: paused;
+    box-shadow: 0 15px 35px -10px rgba(0, 210, 255, 0.35), 0 0 25px rgba(0, 245, 212, 0.2);
+    border-color: rgba(0, 210, 255, 0.6);
+}
+
+.tech-badge-inner {
+    position: relative;
+    background: linear-gradient(145deg, rgba(14, 28, 64, 0.85) 0%, rgba(6, 14, 34, 0.95) 100%);
+    border-radius: 15px;
+    padding: 16px 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    overflow: hidden;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transform: translateZ(20px);
+}
+
+.tech-icon-wrap {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    background: rgba(0, 210, 255, 0.08);
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-badge-card:hover .tech-icon-wrap {
+    transform: scale(1.1) rotate(4deg);
+    background: rgba(0, 210, 255, 0.15);
+    box-shadow: 0 0 18px rgba(0, 210, 255, 0.35);
+}
+
+.tech-icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tech-badge-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.tech-badge-name {
+    color: var(--white1);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.tech-badge-tag {
+    color: #38bdf8;
+    font-size: 11px;
+    font-family: var(--ff-mono);
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+/* 3D tilt sheen on project and service cards */
+.project-item a,
+.service-item,
+.content-card {
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+    transform-style: preserve-3d;
+}
+
+.project-item:hover a,
+.service-item:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 18px 40px -15px rgba(0, 210, 255, 0.25);
+    border-color: rgba(0, 210, 255, 0.35);
+}
+
+/* Custom glowing scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(5, 9, 20, 0.8);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00d2ff, #00f5d4);
+    border-radius: 4px;
+}

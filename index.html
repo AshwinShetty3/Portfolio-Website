@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
 </head>
 <body>
+    <canvas id="bg-canvas"></canvas>
     <main>
         <aside class="sidebar " data-sidebar>
             <div class="sidebar-info">
@@ -16,8 +17,12 @@
                 </figure>
 
                 <div class="info-content">
-                    <h1 class="name" title="Richard Hanrick">Ashwin Shetty</h1>
+                    <h1 class="name" title="Ashwin Shetty">Ashwin Shetty</h1>
                     <p class="title text-center">DevOps Engineer <br> Front-end</p>
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        <span>Available for Roles</span>
+                    </div>
                 </div>
 
                 <button class="info-more-btn" data-sidebar-btn>
@@ -161,6 +166,115 @@
                             </div>
                         </li>
                     </ul>
+                </section>
+
+                <section class="floating-tech-section">
+                    <div class="tech-section-header">
+                        <div class="tech-badge-status-pill">
+                            <span class="status-dot"></span>
+                            <span>Interactive 3D Ecosystem</span>
+                        </div>
+                        <h3 class="h3 tech-title">Cloud & DevOps Tech Stack</h3>
+                        <p class="tech-subtitle">Production-grade technologies I work with daily to deploy resilient cloud applications.</p>
+                    </div>
+
+                    <div class="tech-badges-grid">
+                        <div class="tech-badge-card" style="--float-delay: 0s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">AWS Cloud</h4>
+                                    <span class="tech-badge-tag">EC2 • S3 • Lambda • VPC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 0.6s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">Docker</h4>
+                                    <span class="tech-badge-tag">Containers • Compose</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 1.2s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">Kubernetes</h4>
+                                    <span class="tech-badge-tag">Pods • Scaling • K8s</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 1.8s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">Linux</h4>
+                                    <span class="tech-badge-tag">Ubuntu • RHEL • Bash</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 0.9s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">Git & GitHub</h4>
+                                    <span class="tech-badge-tag">VCS • Actions CI/CD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 1.5s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">React.js</h4>
+                                    <span class="tech-badge-tag">Frontend • Interactive UI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 2.1s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">Jenkins</h4>
+                                    <span class="tech-badge-tag">Pipelines • Automation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-badge-card" style="--float-delay: 0.3s;">
+                            <div class="tech-badge-inner">
+                                <div class="tech-icon-wrap">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible">
+                                </div>
+                                <div class="tech-badge-info">
+                                    <h4 class="tech-badge-name">Ansible</h4>
+                                    <span class="tech-badge-tag">IaC • Configuration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="testimonials">
@@ -696,6 +810,8 @@
         </div>
     </main>
 
+    <!-- Three.js 3D Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="main.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
